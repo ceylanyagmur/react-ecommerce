@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+article{
+    width: 80%;
+    margin: auto;
+   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+.cart_box img{
+    width: 90px;
+    height: 80px;
+}
+
+.cart_img{
+    display: flex;
+     width:22%;
+     background-color: orange;
+ }
+.cart_img p {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.cart_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    border-bottom: 2px solid  olive;
+    padding-bottom: 9px;
+}
+
+
+.cart_box div:nth-child(3) button:hover{
+    background-color: olivedrab;
+}
+.cart_box div:nth-child(3) span{
+    background-color: orange;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.total span:nth-child(1){
+    font-size: 2rem;
+    color: olivedrab;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.total span:nth-child(2){
+    font-size: 2rem;
+    color: orange;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    .cart_img p {
+       
+        font-size: 9px;
+    }
+    .cart_img{
+       display: flex;
+        width:29%;
+        background-color: orange;
+    }
+   
+    .total span:nth-child(1){
+        font-size: 1rem;
+       
+        letter-spacing: 1px;
+    }
+    .cart_box img{
+        width: 50px;
+        height: 50px;
+    }
+   
+   
+}
+@media screen and (max-width: 768px) {
+    .cart_img p {
+       
+        font-size: 9px;
+    }
+    .cart_img{
+       display: flex;
+        width:27%;
+        background-color: orange;
+    }
+    .total{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart_box img{
+        width: 50px;
+        height: 50px;
+    }
+   
+    
+}
+@media screen and (max-width: 600px) {
+    .cart_img p {
+       
+        font-size: 6px;
+    }
+    .cart_img{
+       display: flex;
+        width:26%;
+        background-color: orange;
+    }
+    .cart_box img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 480px) {
+
+    
+}
